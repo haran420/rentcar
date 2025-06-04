@@ -5,7 +5,7 @@
     >
       <div class="sm:absolute -inset-x-1/3 inset-y-20 mb-4 md:mb-0">
         <img
-          src="../../assets/images/about.jpg"
+          src="../../assets/images/reena.jpg"
           alt=""
           class="md:max-w-[32rem] h-auto object-cover"
         />

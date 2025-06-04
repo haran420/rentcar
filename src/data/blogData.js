@@ -17,7 +17,7 @@ export const blogs = [
       ],
       title: "Why Lead Generation is Key for Business Growth",
       description: "Learn why lead generation plays a crucial role in scaling businesses effectively. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.",
-      image: "image_1.jpg"
+      image: "photo1.jpg"
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ export const blogs = [
       ],
       title: "Effective Marketing Strategies for 2024",
       description: "Discover the top marketing strategies that will dominate in 2024.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.",
-      image: "image_2.jpg"
+      image: "image_5.jpg"
     },
     {
       id: 3,
@@ -57,6 +57,6 @@ export const blogs = [
       ],
       title: "The Future of Digital Advertising",
       description: "Explore the trends shaping digital advertising and how to stay ahead.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.",
-      image: "image_3.jpg"
+      image: "photo3.jpg"
     }
   ];

@@ -13,7 +13,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-import bgImage from "../../assets/images/bg_1.jpg";
+import bgImage from "../../assets/images/hari.jpg.jpg";
 
 const isVisible = ref(false);
 

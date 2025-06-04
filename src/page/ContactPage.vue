@@ -2,7 +2,7 @@
 <template>
   <BgContainer
     title="Contact"
-    bgImage="bg_3.jpg"
+    bgImage="indhu.jpg"
     :links="[
       { text: 'Home', to: '/' },
       { text: 'Contact', to: '/contact' },

@@ -2,17 +2,24 @@
 <template>
   <header
     :class="headerClass"
-    class="flex justify-center px-6 z-50 fixed w-full top-0 p-2 bg-white drop-shadow-sm"
+    class="flex justify-end px-6 z-50 fixed w-full top-0 p-2 bg-white drop-shadow-sm"
   >
     <div class="flex justify-between items-center w-full md:w-5/6 md:relative">
       <PageLogo />
-      <nav :class="{'scrolled-nav' : isScrolled}" class="space-x-6 hidden md:flex">
+      
+      <!-- Desktop Navbar -->
+      <nav :class="{'scrolled-nav' : isScrolled}" class="space-x-3 hidden md:flex ml-auto">
         <router-link
           v-for="link in links"
           :key="link.path"
           :to="link.path"
-          :class="{ 'active-link': route.path === link.path }"
-          >{{ link.name }}
+          :class="[
+            'inline-block px-6 py-2 uppercase duration-200 rounded-md',
+            'hover:shadow-[0px_0px_20px_8px_#d2e6ff]',
+            route.path === link.path ? 'text-green-500 font-bold' : 'text-black hover:text-primary'
+          ]"
+        >
+          {{ link.name }}
         </router-link>
       </nav>
 
@@ -22,14 +29,15 @@
           <FaBarsStaggered />
         </button>
 
-        <div v-if="menuVisible" class="absolute top-16 left-0 bg-white shadow-lg  w-full p-4 flex flex-col space-y-6">
+        <div v-if="menuVisible" class="absolute top-16 left-0 bg-white shadow-lg w-full p-4 flex flex-col space-y-6">
           <router-link
             v-for="link in links"
             :key="link.path"
             :to="link.path"
             :class="{ 'active-link': route.path === link.path }"
             @click="closeMenu"
-            >{{ link.name }}
+          >
+            {{ link.name }}
           </router-link>
         </div>
       </div>
