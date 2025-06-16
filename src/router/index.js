@@ -66,7 +66,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/rentcar/"),
   routes,
   scrollBehavior() {
     return { top: 0 }; // scroll to the top on page navigation
