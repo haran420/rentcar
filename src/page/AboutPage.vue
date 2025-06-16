@@ -1,13 +1,14 @@
 <template>
   <BgContainer
     title="About"
-    bgImage="indhu.jpg"
+    bgImage="two2.jpg"
     :links="[
       { text: 'Home', to: '/' },
       { text: 'About Us', to: '/about' },
     ]"
   />
-  <AboutUs/>
+  <br><br>
+  <AboutUs/><br><br>
   <CallToAction/>
   <TestimonySection/>
   <StatisticsSection/>

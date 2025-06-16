@@ -2,7 +2,7 @@
 <template>
   <BgContainer
     title="Contact"
-    bgImage="indhu.jpg"
+    bgImage="two2.jpg"
     :links="[
       { text: 'Home', to: '/' },
       { text: 'Contact', to: '/contact' },
@@ -69,15 +69,17 @@
     </div>
 
     <!-- Dummy Map -->
-    <div class="mt-10">
-        <iframe
-          src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen
-          class="w-full h-[350px] md:h-[700px]"
-        ></iframe>
-    </div>
+   <div class="mt-10">
+      <iframe
+         src="https://www.google.com/maps?q=11.1518913,78.5957143&z=14&output=embed"
+         frameborder="0"
+         style="border:0;"
+         allowfullscreen=""
+         loading="lazy"
+         class="w-full h-[350px] md:h-[700px]"
+    ></iframe>
+   </div>
+
   </div>
 </template>
 

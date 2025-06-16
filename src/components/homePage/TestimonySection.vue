@@ -35,6 +35,7 @@ import "swiper/css/autoplay";
 import SectionHeading from "../composables/SectionHeading.vue";
 import {testimonys} from "../../data/testimonyData"
 import TestimonyCard from "../cards/TestimonyCard.vue"
+
 </script>
 
-<style></style>
+<style></style> 

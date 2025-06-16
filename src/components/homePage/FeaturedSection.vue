@@ -1,15 +1,23 @@
 <template>
-  <SectionHeading description="What we offer" title="Featured Vechicles" />
-  <div class="w-full h-full py-10 md:py-20">
+  <SectionHeading description="What we offer" title="Featured Vehicles" />
+
+  <div class="relative w-full h-full py-10 md:py-20 flex justify-center">
+    <!-- Custom navigation buttons -->
+    <div class="swiper-button-prev custom-nav absolute top-1/2 -left-6 transform -translate-y-1/2 z-50"></div>
+    <div class="swiper-button-next custom-nav absolute top-1/2 -right-6 transform -translate-y-1/2 z-50"></div>
+
     <swiper
-      :modules="[Autoplay]"
-      :space-between="30"
-      navigation
-      loop
+      :modules="[Navigation, Autoplay]"
+      :navigation="{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }"
+      :loop="true"
       :autoplay="{ delay: 3000, disableOnInteraction: false }"
+      :space-between="30"
       :breakpoints="{
         640: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
+        1024: { slidesPerView: 3 }
       }"
       class="w-4/5 drop-shadow-2xl"
     >
@@ -28,12 +36,25 @@
 
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import "swiper/swiper-bundle.css";
-import { Autoplay } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/autoplay";
+
 import SectionHeading from "../composables/SectionHeading.vue";
 import CarCard from "../cards/CarCard.vue";
 import { cars } from "../../data/carsData";
 </script>
 
-<style></style>
+<style scoped>
+.custom-nav {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>

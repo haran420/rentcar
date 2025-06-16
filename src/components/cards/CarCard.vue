@@ -10,12 +10,14 @@
           <span class="text-gray-400 text-sm font-light">/day</span>
         </p>
       </div>
-      <div class="flex justify-between">
-        <router-link :to="`/pricing`">
-          <ButtonComponent text="Book Now" />
-        </router-link>
+
+      <!-- Buttons: Light Brown Details, Green Book Now -->
+      <div class="flex flex-row gap-3 pt-2 justify-center">
         <router-link :to="`/car/${id}`">
-          <ButtonComponent text="Details" bgColor="bg-green-500" />
+          <ButtonComponent text="Details" bgColor="bg-amber-200 text-gray-800" />
+        </router-link>
+        <router-link :to="`/pricing`">
+          <ButtonComponent text="Book Now" bgColor="bg-green-600 text-white" />
         </router-link>
       </div>
     </div>

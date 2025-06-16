@@ -16,7 +16,7 @@
           :class="[
             'inline-block px-6 py-2 uppercase duration-200 rounded-md',
             'hover:shadow-[0px_0px_20px_8px_#d2e6ff]',
-            route.path === link.path ? 'text-green-500 font-bold' : 'text-black hover:text-primary'
+            route.path === link.path ? 'text-red-500 font-bold' : 'text-black hover:text-primary'
           ]"
         >
           {{ link.name }}

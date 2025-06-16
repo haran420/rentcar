@@ -1,7 +1,7 @@
 <template>
   <BgContainer
     title="Blog Detail"
-    bgImage="indhu.jpg"
+    bgImage="two2.jpg"
     :links="[
       { text: 'Home', to: '/' },
       { text: 'Blogs', to: '/blog' },
